@@ -8,7 +8,7 @@ const port = 9801;
 app.use(bodyParser.json());
 
 execaCommandSync("chmod +x ./run.sh");
-const modelProcess = execaCommand("./run.sh");
+const modelProcess = execaCommand("sh ./run.sh");
 let modelDataListener = (data) => {
   console.log(data.toString());
 };
