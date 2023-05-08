@@ -1,0 +1,13 @@
+{
+  "name": "koala-cpp",
+  "weights": [
+    "https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g-GGML/resolve/main/koala-7B-4bit-128g.GGML.bin"
+  ],
+  "flake": "github:ggerganov/llama.cpp",
+  "setup": "npm --prefix ./server install",
+  "options": {
+    "model": {},
+    "agent": {}
+  },
+  "serve": "node server/server.js"
+}
